@@ -7,7 +7,7 @@
   "scripts": {
     "build": "webpack --config ./example/config/webpack.config.prod.js",
     "server": "babel-node example/server --presets=es2015-node5,stage-2,react",
-    "start": "nodemon --watch example/server --watch example/config --exec npm run server",
+    "start": "nodemon --watch example/server --watch example/config --exec npm run server"
   },
   "devDependencies": {
     "babel-cli": "6.14.0",
