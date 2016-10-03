@@ -1,11 +1,11 @@
 {
   "name": "react-virtualized-infinite-scroll",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Infinite scroll list for React that also works in reverse",
   "license": "MIT",
   "author": "kyle-ssg",
   "scripts": {
-    "build": "webpack --config ./example/config/webpack.config.prod.js",
+    "install": "webpack --config ./example/config/webpack.config.prod.js",
     "server": "babel-node example/server --presets=es2015-node5,stage-2,react",
     "start": "nodemon --watch example/server --watch example/config --exec npm run server"
   },
