@@ -1,8 +1,8 @@
 import React, {Component, PropTypes} from 'react';
 import ReactDOM from 'react-dom';
-//import InfiniteScroll from '../../../';
+import InfiniteScroll from '../../../';
 const range = require('lodash.range');
-import InfiniteScroll from '../../../dist/';
+//import InfiniteScroll from '../../../dist/';
 
 class InfiniteScrollExample extends Component {
     constructor (props) {
