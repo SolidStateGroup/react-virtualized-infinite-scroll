@@ -38,10 +38,10 @@ addToBottom = () => {
     }
 }
 
-renderRow (data) {
+renderRow (row) {
     return (
-        <div className=".FlexTable__row" key={data.key}>
-            Row {data.key + 1}
+        <div className=".FlexTable__row" key={row.key}>
+            Row {row.key + 1}
         </div>
     );
 }
@@ -71,6 +71,21 @@ render () {
 }
 
 ```
+
+### Prop Types
+| Property | Type | Required? | Description |
+|:---|:---|:---:|:---|
+| loadMore | Function | ✓ | Callback used for loading more data |
+| renderRow | Function | ✓ | Used to render each row |
+| rowHeight | Number or Function | ✓ | Either a fixed row height (number) or a function that returns the height of a row given its index: `({ index: number }): number` |
+| threshold | Number | ✓ | How many rows before the bottom (or top in reverse mode) to request more data |
+| isLoading | Bool |  | While true a loading item is shown at the bottom (or top in reverse mode). Useful while loading more data |
+| scrollToRow | Number |  | Row index to ensure visible (by forcefully scrolling if necessary) |
+| renderLoading | Object |  | Render a custom loading item |
+| data | Array |  | Data array |
+| containerHeight | Number |  | Force a height on the entire list component. Default is to auto fill available space |
+| reverse | Bool |  | Reverse scroll direction. Defaults to `false` |
+| scrollRef | Function |  | Callback used to give back reference to underlying virtual scroll component for finer control |
 
 ## Development
 Should you wish to develop this module further start by cloning this repository
